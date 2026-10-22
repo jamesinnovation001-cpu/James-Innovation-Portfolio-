@@ -14,7 +14,51 @@
 @media(max-width:620px){.wrap{width:calc(100% - 28px)}.menu{display:block}.links{display:none;position:absolute;top:74px;left:0;right:0;background:#0a1028;padding:20px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.links.open{display:flex}.links .btn{text-align:center}.hero{padding:55px 0}.section{padding:58px 0}.cards{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.page{padding-top:45px}.trust-grid{font-size:11px}.cta{padding:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
-</head>
+<style>
+/* Brand refresh: more white space, with navy and blue as accents */
+:root{--navy:#0A1028;--black:#05070D;--panel:#F4F7FC;--panel2:#EAF1FC;--white:#10182D;--muted:#58647D;--blue:#287DFF;--cyan:#1678C8;--line:#DCE4F0;--max:1160px}
+body{background:#fff;color:#10182D}
+.site-header{background:rgba(255,255,255,.94);border-bottom:1px solid #E3E9F3}
+.brand-name,.brand b{color:#10182D}.brand-name small{color:#68758D}
+.links a{color:#526078}.links a:hover,.links a.active{color:#0A1028}
+.menu{color:#0A1028;border-color:#DCE4F0}
+.hero{background:radial-gradient(ellipse at 88% 12%,#287dff15,transparent 35%),#fff}
+.hero:before{background:radial-gradient(circle,rgba(40,125,255,.12),transparent 68%)}
+.gradient{background:linear-gradient(95deg,#0A1028 8%,#287DFF 65%,#1678C8);color:transparent;background-clip:text;-webkit-background-clip:text}
+.lead{color:#58647D}
+.eyebrow{color:#176AC4;background:#EFF6FF;border-color:#C9E1FF}
+.trust-row{background:#F5F8FD;border-color:#E0E7F1}.trust-item{color:#182542}
+.section.alt{background:#F4F7FC;border-color:#E5EBF4}
+.section h2,.card h3,.about-panel h3{color:#10182D}
+.section-head p,.muted,.card p{color:#58647D}
+.card{background:#fff;border-color:#DFE6F1;box-shadow:0 8px 28px #10244a08}
+.card:hover{border-color:#8DBBFF;box-shadow:0 12px 32px #10244a12}
+.icon-box{background:#EAF3FF;border-color:#C8E0FF;color:#176AC4}
+.text-link,.kicker{color:#176AC4}
+.project-preview{background:radial-gradient(circle at 80% 20%,rgba(85,214,255,.2),transparent 35%),linear-gradient(140deg,#EAF2FF,#F8FBFF);border-color:#D8E4F5}
+.preview-lines b{background:#20345B}.preview-lines span{background:#9BAFD2}
+.tag{color:#32415E;border-color:#D8E1EE;background:#F7F9FC}
+.about-panel{background:#F4F7FC;border-color:#DCE4F0}
+.cta-band{background:radial-gradient(circle at 95% 5%,rgba(40,125,255,.16),transparent 35%),linear-gradient(125deg,#F0F6FF,#FFFFFF);border-color:#C8DEFF}
+.cta-band h2{color:#10182D}.cta-band p{color:#58647D}
+.page-hero{background:radial-gradient(circle at 80% 0,rgba(40,125,255,.12),transparent 38%),#fff}
+.page-hero p{color:#58647D}
+.contact-method{border-color:#DCE4F0;background:#fff}
+.contact-method small{color:#58647D}
+.form-card{background:#F6F8FC;border-color:#DCE4F0}
+.field label{color:#25314B}
+.field input,.field select,.field textarea{background:#fff;border-color:#CFD9E8;color:#10182D}
+.field input::placeholder,.field textarea::placeholder{color:#8490A6}
+.empty-review{border-color:#CAD6E8;background:#F8FAFD}
+.empty-review h2{color:#10182D}
+.footer{background:#0A1028;color:#fff;border-color:#202C48}
+.footer p,.footer-links{color:#B5C1D9}
+.footer .brand-name{color:#fff}.footer .brand-name small{color:#9EABC6}
+.not-found h1{color:#10182D}
+.float-chip{background:#0A1028;color:#fff}
+.float-chip span{color:#55D6FF}
+@media(max-width:680px){.links{background:#fff;border-color:#DCE4F0}.links a{color:#526078}.links a:hover,.links a.active{color:#0A1028}}
+</style></head>
 <body>
 <header class="top"><nav class="wrap"><a href="/" class="logo"><span class="mark">J.</span><span>JAMES INNOVATION<br><small style="color:#aab5cf;font-size:9px;letter-spacing:.16em">DESIGN · DIGITAL · GROWTH</small></span></a><button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button><div class="links" id="links"><a data-route="/" href="/">Home</a><a data-route="/about" href="/about">About</a><a data-route="/services" href="/services">Services</a><a data-route="/reviews" href="/reviews">Reviews</a><a data-route="/contact" href="/contact">Contact</a><a class="btn" href="/contact">Let’s talk ↗</a></div></nav></header>
 <main id="app"></main>
