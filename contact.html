@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Contact James Innovation by email about websites, e-commerce and digital promotion.">
+<title>Contact | James Innovation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a class="brand" href="index.html"><img src="assets/james-innovation-logo.jpg" alt="James Innovation logo"><b>JAMES INNOVATION</b></a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="products-reviews.html">Products / Reviews</a><a aria-current="page" href="contact.html">Contact</a></nav></header>
+<main class="wrap">
+<p class="eyebrow">CONTACT JAMES INNOVATION</p>
+<h1>Tell us what you want to <em>build.</em></h1>
+<p class="lead">Send a project enquiry by email. Share a few details and your email app will open with your message ready to send to James Innovation.</p>
+<section class="reviewbox">
+<h2>Project enquiry</h2>
+<form id="contactForm">
+<label>Your name<input name="name" autocomplete="name" required maxlength="100"></label>
+<label>Your email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+<label>What do you need?
+<select name="service" required><option value="">Choose a service</option><option>Website development</option><option>Shopify / e-commerce</option><option>SEO and search visibility</option><option>Social media promotion</option><option>Promotional graphics</option><option>Website audit or improvement</option><option>Other project</option></select></label>
+<label>Project details<textarea name="message" required minlength="10" maxlength="3000" placeholder="Tell us about your business, goals and budget…"></textarea></label>
+<button class="btn" type="submit">Prepare email enquiry ↗</button>
+<p id="status" role="status" class="fine">Your enquiry will be addressed to jamesinnovation001@gmail.com. This form opens your email app; it does not send automatically.</p>
+</form>
+</section>
+<p class="fine">Prefer direct email? <a href="mailto:jamesinnovation001@gmail.com">jamesinnovation001@gmail.com</a></p>
+</main>
+<footer>© <span id="year"></span> James Innovation · Create · Build · Grow · <a href="mailto:jamesinnovation001@gmail.com">Email us</a></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',function(e){
+e.preventDefault();const f=new FormData(e.currentTarget);
+const subject=encodeURIComponent('Project enquiry — '+f.get('service'));
+const body=encodeURIComponent('Name: '+f.get('name')+'\nReply email: '+f.get('email')+'\nService: '+f.get('service')+'\n\nProject details:\n'+f.get('message'));
+document.getElementById('status').textContent='Opening your email app with the enquiry prepared…';
+location.href='mailto:jamesinnovation001@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
+</body></html>
