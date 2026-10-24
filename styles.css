@@ -56,3 +56,13 @@ footer{display:flex;flex-direction:column;align-items:center;gap:14px}
 .trust-badge strong{display:block;color:#f4f7ff;font-size:13px;line-height:1.4}
 .trust-badge small{display:block;color:#bdc9dc;font-size:11px;line-height:1.5}
 @media(max-width:480px){.trust-badge{padding:10px 12px;gap:9px}.trust-badge small{font-size:10px}}
+
+
+/* Compact trust badge positioned at the bottom-right of the footer menu */
+footer{display:block;position:relative;min-height:74px;padding:22px 190px 22px 24px;text-align:center}
+.footer-menu-row{position:relative;display:flex;align-items:center;justify-content:center;min-height:30px;max-width:1160px;margin:0 auto}
+.footer-copy{color:#aebbd0;font-size:12px}
+.trusted-badge{position:absolute;right:0;bottom:50%;transform:translateY(50%);display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border:1px solid rgba(105,186,255,.58);border-radius:999px;background:linear-gradient(135deg,#12355b,#0b1c34);color:#eaf6ff!important;font-size:12px;font-weight:850;letter-spacing:.02em;white-space:nowrap;box-shadow:0 5px 16px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.08);text-decoration:none!important}
+.trusted-badge:hover{border-color:#8bd3ff;box-shadow:0 0 0 3px rgba(8,123,255,.12),0 7px 18px rgba(0,0,0,.3)}
+.trusted-check{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#087bff,#00b9f4);color:white;font-size:12px;font-weight:950}
+@media(max-width:760px){footer{padding:20px 16px 68px}.footer-menu-row{justify-content:center}.trusted-badge{right:0;bottom:-48px;transform:none;font-size:11px;padding:6px 10px}}
