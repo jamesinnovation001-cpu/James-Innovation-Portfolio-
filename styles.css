@@ -124,3 +124,19 @@ footer{display:block;position:relative;min-height:74px;padding:22px 190px 22px 2
 @keyframes aboutFloat{50%{translate:0 -18px;rotate:12deg}}
 @media(max-width:650px){.about-page .about-visual-scene{min-height:360px;margin:35px 0 65px}.about-page .about-image-main{left:1%;top:44px;width:72%;height:225px}.about-page .about-image-side{right:0;top:8px;width:52%;height:150px}.about-page .about-image-small{right:6%;bottom:8px;width:58%;height:145px}.about-page .image-card-caption{left:11px;bottom:10px;font-size:9px}.about-page .about-scene-note{bottom:-34px}}
 @media(prefers-reduced-motion:reduce){.about-page .about-scene-note span,.about-page .about-visual-scene:before,.about-page .about-visual-scene:after{animation:none}}
+
+/* About page: cinematic tech image used as a background, with scroll parallax */
+.about-page .about-tech-background{position:relative;min-height:430px;margin:48px 0 72px;border:1px solid #248bff66;border-radius:28px;overflow:hidden;isolation:isolate;display:flex;align-items:center;justify-content:center;text-align:center;background:#06152c;box-shadow:0 28px 70px #0007}
+.about-page .tech-background-image{position:absolute;inset:-8%;z-index:-3;background-image:url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=90");background-position:center 48%;background-size:cover;transform:scale(1.12);will-change:transform,filter}
+.about-page .tech-background-overlay{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#030916e8 0%,#06152cc9 48%,#06152c9c 100%),linear-gradient(0deg,#06152cbb,#087bff22);mix-blend-mode:normal}
+.about-page .tech-background-content{position:relative;max-width:760px;padding:65px 28px;z-index:1;text-shadow:0 3px 18px #000}
+.about-page .tech-background-content h2{font-size:clamp(30px,5vw,52px);max-width:700px;margin:12px auto 18px;line-height:1.1}
+.about-page .tech-background-content>p:not(.eyebrow){max-width:590px;margin:0 auto;color:#e1edff;font-size:17px}
+.about-page .tech-background-content .eyebrow{color:#76c7ff}
+.about-page .tech-background-line{display:block;width:100px;height:3px;margin:28px auto 0;border-radius:9px;background:linear-gradient(90deg,#087bff,#00d5ff);box-shadow:0 0 22px #00b9f4}
+.about-page .tech-orbit{position:absolute;z-index:-1;left:50%;top:50%;border:1px solid #58baff66;border-radius:50%;transform:translate(-50%,-50%) rotate(-20deg);pointer-events:none}
+.about-page .tech-orbit-one{width:360px;height:180px;animation:techOrbit 13s linear infinite}
+.about-page .tech-orbit-two{width:470px;height:240px;transform:translate(-50%,-50%) rotate(35deg);border-color:#00d5ff44;animation:techOrbit 18s linear infinite reverse}
+@keyframes techOrbit{to{rotate:340deg}}
+@media(max-width:650px){.about-page .about-tech-background{min-height:360px;margin:35px 0 58px;border-radius:20px}.about-page .tech-background-content{padding:48px 18px}.about-page .tech-background-content>p:not(.eyebrow){font-size:15px}.about-page .tech-orbit-one{width:250px;height:130px}.about-page .tech-orbit-two{width:320px;height:170px}}
+@media(prefers-reduced-motion:reduce){.about-page .tech-orbit{animation:none}}
