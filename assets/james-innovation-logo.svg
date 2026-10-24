@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
+<title id="title">James Innovation</title><desc id="desc">Blue and black JI monogram with a lightbulb and the tagline Create Build Grow.</desc>
+<defs><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b55d9"/><stop offset="1" stop-color="#159cff"/></linearGradient></defs>
+<g transform="translate(18 15)">
+<path d="M35 15H132V36H106V116C106 159 82 181 43 181C23 181 9 175 0 166L16 144C23 151 32 155 43 155C62 155 73 143 73 119V36H35Z" fill="#07152f"/>
+<path d="M132 36H157V164H132Z" fill="url(#blue)"/>
+<path d="M157 54C181 54 194 68 194 91C194 114 180 128 157 128H150V105H157C166 105 171 100 171 91C171 82 166 77 157 77Z" fill="url(#blue)"/>
+<path d="M145 6C128 6 115 19 115 36C115 47 121 56 129 62V72H161V62C169 56 175 47 175 36C175 19 162 6 145 6Z" fill="none" stroke="#159cff" stroke-width="5" stroke-linejoin="round"/>
+<path d="M133 78H157M136 86H154" stroke="#159cff" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="245" y="100" font-size="70" font-weight="800" letter-spacing="-2" fill="#07152f">JAMES</text>
+<text x="245" y="158" font-size="49" font-weight="800" letter-spacing="2" fill="#0878f9">INNOVATION</text>
+<path d="M247 176H668" stroke="#d6e4f5" stroke-width="2"/>
+<text x="247" y="201" font-size="17" font-weight="700" letter-spacing="4" fill="#07152f">CREATE • BUILD • GROW</text>
+</g></svg>
