@@ -221,14 +221,15 @@ footer:before{
 @media(max-width:520px){.about-profile-portrait{gap:14px;padding:12px;border-radius:18px}.about-profile-portrait img{width:42%;height:235px}.about-profile-portrait figcaption{font-size:17px}.about-profile-portrait figcaption span{font-size:11px}.home-profile img{width:68px;height:78px}}
 
 
-/* Unified founder + mission section */
-.about-founder-hero{display:grid;grid-template-columns:minmax(220px,.78fr) minmax(0,1.35fr);align-items:stretch;gap:clamp(22px,4vw,54px);padding:clamp(22px,4vw,44px);overflow:hidden}
-.about-founder-hero .founder-hero-photo{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;min-width:0}
-.about-founder-hero .founder-hero-photo img{display:block;width:100%;max-width:300px;height:clamp(260px,32vw,390px);object-fit:cover;object-position:center 22%;border-radius:20px;border:1px solid #7bcaff88;box-shadow:0 18px 38px #0008,0 0 28px #087bff2b}
-.about-founder-hero .founder-hero-name{display:flex;flex-direction:column;gap:7px;margin:0;text-align:center;color:#f5f8ff;font-size:clamp(17px,2vw,23px);font-weight:850}
-.about-founder-hero .founder-hero-name span{color:#8ccfff;font-size:12px;font-weight:650;letter-spacing:.04em}
-.about-founder-hero .tech-background-content{align-self:center;min-width:0;padding:24px 0;text-align:left}
-.about-founder-hero .tech-background-content h2{max-width:620px}
-.about-founder-hero .tech-background-content>p:not(.eyebrow){max-width:520px}
+/* Compact unified founder + mission section */
+.about-founder-hero{display:grid;grid-template-columns:minmax(145px,.62fr) minmax(0,1.5fr);align-items:center;gap:clamp(16px,2.5vw,30px);padding:clamp(16px,2.5vw,28px);overflow:hidden;min-height:0}
+.about-founder-hero .founder-hero-photo{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;min-width:0}
+.about-founder-hero .founder-hero-photo img{display:block;width:100%;max-width:190px;height:clamp(170px,21vw,230px);object-fit:cover;object-position:center 22%;border-radius:15px;border:1px solid #7bcaff88;box-shadow:0 12px 24px #0007,0 0 20px #087bff22}
+.about-founder-hero .founder-hero-name{display:flex;flex-direction:column;gap:5px;margin:0;text-align:center;color:#f5f8ff;font-size:clamp(14px,1.5vw,18px);font-weight:850}
+.about-founder-hero .founder-hero-name span{color:#8ccfff;font-size:10px;font-weight:650;letter-spacing:.02em}
+.about-founder-hero .tech-background-content{align-self:center;min-width:0;padding:12px 0;text-align:left}
+.about-founder-hero .tech-background-content h2{max-width:480px;font-size:clamp(23px,3vw,38px);line-height:1.12}
+.about-founder-hero .tech-background-content>p:not(.eyebrow){max-width:440px;font-size:clamp(13px,1.2vw,16px)}
+.about-founder-hero .tech-background-content .eyebrow{font-size:10px}
 .about-founder-hero .tech-background-line{margin-left:0}
-@media(max-width:700px){.about-founder-hero{grid-template-columns:1fr;gap:22px;padding:22px}.about-founder-hero .founder-hero-photo img{width:min(72%,270px);height:290px}.about-founder-hero .tech-background-content{text-align:center;padding:8px 0 14px}.about-founder-hero .tech-background-content h2,.about-founder-hero .tech-background-content>p:not(.eyebrow){margin-left:auto;margin-right:auto}.about-founder-hero .tech-background-line{margin-left:auto;margin-right:auto}}
+@media(max-width:700px){.about-founder-hero{grid-template-columns:1fr;gap:14px;padding:16px}.about-founder-hero .founder-hero-photo{gap:8px}.about-founder-hero .founder-hero-photo img{width:min(48%,160px);height:155px}.about-founder-hero .founder-hero-name{font-size:15px}.about-founder-hero .founder-hero-name span{font-size:10px}.about-founder-hero .tech-background-content{text-align:center;padding:4px 0 8px}.about-founder-hero .tech-background-content h2,.about-founder-hero .tech-background-content>p:not(.eyebrow){margin-left:auto;margin-right:auto}.about-founder-hero .tech-background-content h2{font-size:clamp(22px,6vw,30px)}.about-founder-hero .tech-background-line{margin-left:auto;margin-right:auto}}
