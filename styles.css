@@ -210,15 +210,15 @@ footer:before{
 
 
 /* Founder portraits: natural photo, framed in the James Innovation navy and blue palette */
-.home-profile{display:flex;align-items:center;gap:18px;margin:24px 0 10px;padding:16px;width:min(100%,520px);border:1px solid #248bff66;border-radius:20px;background:linear-gradient(125deg,#0a1930,#07152f 65%,#0b2a50);box-shadow:0 16px 36px #0005,0 0 24px #087bff14}
-.home-profile img{display:block;width:clamp(130px,22vw,190px);height:clamp(155px,26vw,230px);object-fit:cover;object-position:center 22%;border-radius:15px;border:1px solid #7bcaff88;box-shadow:0 12px 24px #0007,0 0 20px #087bff22}
-.home-profile>span{display:flex;flex-direction:column;gap:7px;color:#f5f8ff;font-size:clamp(14px,1.5vw,18px);font-weight:900;letter-spacing:.03em}
+.home-profile{display:flex;align-items:center;gap:14px;margin:24px 0 8px;max-width:360px}
+.home-profile img{display:block;width:76px;height:88px;object-fit:cover;object-position:center 24%;border-radius:16px;border:1px solid #68bdff;box-shadow:0 8px 24px #0006,0 0 18px #087bff22}
+.home-profile>span{display:flex;flex-direction:column;gap:5px;color:#f5f8ff;font-size:12px;font-weight:900;letter-spacing:.1em}
 .home-profile small{color:#91cfff;font-size:11px;font-weight:650;letter-spacing:.02em}
 .about-profile-portrait{display:flex;align-items:center;gap:22px;margin:28px 0 46px;padding:18px;width:min(100%,690px);border:1px solid #248bff66;border-radius:24px;background:linear-gradient(125deg,#0a1930,#07152f 65%,#0b2a50);box-shadow:0 22px 50px #0005,0 0 28px #087bff15}
 .about-profile-portrait img{display:block;width:min(38%,250px);height:300px;object-fit:cover;object-position:center 22%;border-radius:17px;border:1px solid #7bcaff77;box-shadow:0 12px 28px #0006}
 .about-profile-portrait figcaption{display:flex;flex-direction:column;gap:9px;color:#f5f8ff;font-size:clamp(18px,3vw,25px);font-weight:850;letter-spacing:-.02em}
 .about-profile-portrait figcaption span{color:#8ccfff;font-size:13px;font-weight:650;letter-spacing:.03em}
-@media(max-width:520px){.about-profile-portrait{gap:14px;padding:12px;border-radius:18px}.about-profile-portrait img{width:42%;height:235px}.about-profile-portrait figcaption{font-size:17px}.about-profile-portrait figcaption span{font-size:11px}.home-profile{gap:12px;padding:12px;border-radius:16px}.home-profile img{width:42%;height:155px;max-width:160px}.home-profile>span{font-size:14px}}
+@media(max-width:520px){.about-profile-portrait{gap:14px;padding:12px;border-radius:18px}.about-profile-portrait img{width:42%;height:235px}.about-profile-portrait figcaption{font-size:17px}.about-profile-portrait figcaption span{font-size:11px}.home-profile img{width:68px;height:78px}}
 
 
 /* Compact unified founder + mission section */
