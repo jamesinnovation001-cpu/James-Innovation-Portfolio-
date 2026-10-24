@@ -161,3 +161,19 @@ footer{display:block;position:relative;min-height:74px;padding:22px 190px 22px 2
 @keyframes techSectionDrift{0%{transform:scale(1.08) translate3d(-1%,0,0);filter:saturate(.88) brightness(.78)}100%{transform:scale(1.18) translate3d(1%,-1.5%,0);filter:saturate(1.15) brightness(.95)}}
 @media(max-width:650px){.tech-image-section{border-radius:18px}.hero.tech-image-section{margin:24px 0 44px;padding:28px 20px}.projects-section.tech-image-section,.embedded-project-section.tech-image-section{margin:34px 0;padding:20px 15px}.tech-image-services{padding:15px 12px}.tech-image-section:before{animation-duration:34s}}
 @media(prefers-reduced-motion:reduce){.tech-image-section:before{animation:none;transform:scale(1.08)}}
+
+/* Separate client-review ticker and review-submission form */
+.client-reviews-section{margin:42px 0 28px;padding:clamp(22px,4vw,40px)}
+.tech-image-leave-review{margin:28px 0 50px}
+.review-marquee{position:relative;overflow:hidden;width:100%;margin:24px 0 4px;padding:8px 0;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.review-marquee-track{display:flex;width:max-content;gap:22px;align-items:stretch}
+.review-marquee-track.is-scrolling{animation:reviewTickerScroll 34s linear infinite}
+.review-marquee:hover .review-marquee-track.is-scrolling{animation-play-state:paused}
+.review-marquee-group{display:flex;gap:18px;align-items:stretch;flex-shrink:0}
+.review-ticker-item{flex:0 0 min(340px,78vw);width:min(340px,78vw);margin:0;padding:18px 20px;border:1px solid #6bbdff55;border-radius:18px;background:linear-gradient(145deg,#0a1930e8,#081226ed);box-shadow:0 10px 28px #0004;white-space:normal}
+.review-ticker-item p{margin:8px 0;color:#dce9ff}
+.review-ticker-item .stars{color:#7bcaff;letter-spacing:.12em;font-size:18px}
+.review-ticker-item b{color:#fff}
+@keyframes reviewTickerScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:650px){.client-reviews-section{margin:30px 0 20px;padding:22px 15px}.review-ticker-item{padding:15px;width:78vw;flex-basis:78vw}}
+@media(prefers-reduced-motion:reduce){.review-marquee-track.is-scrolling{animation:none}}
