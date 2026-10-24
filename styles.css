@@ -177,3 +177,17 @@ footer{display:block;position:relative;min-height:74px;padding:22px 190px 22px 2
 @keyframes reviewTickerScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:650px){.client-reviews-section{margin:30px 0 20px;padding:22px 15px}.review-ticker-item{padding:15px;width:78vw;flex-basis:78vw}}
 @media(prefers-reduced-motion:reduce){.review-marquee-track.is-scrolling{animation:none}}
+
+
+/* Footer menu: clean white-to-electric-blue gradient */
+footer{
+  background:linear-gradient(112deg,#ffffff 0%,#f7fbff 24%,#d8efff 52%,#4daeff 78%,#087bff 100%);
+  border-top:1px solid #a9ddff;
+  color:#08254b;
+  box-shadow:0 -10px 34px #087bff20;
+}
+.footer-copy{color:#08254b;font-weight:750;text-shadow:0 1px 0 #ffffffaa}
+.footer-copy a{color:#005ce6;font-weight:900;text-decoration:underline;text-underline-offset:3px}
+.footer-copy a:hover{color:#032d76}
+.footer-menu-row .trusted-badge-3d{filter:drop-shadow(0 5px 10px #004fb944)}
+@media(max-width:760px){footer{background:linear-gradient(155deg,#ffffff 0%,#e6f5ff 35%,#74c2ff 70%,#087bff 100%)}}
