@@ -1,11 +1,51 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Meet James John Victor, founder of James Innovation, supporting businesses with web design, e-commerce and digital marketing."><title>About James Innovation</title><link rel="stylesheet" href="styles.css"></head>
-<body><header><a class="brand" href="index.html"><img src="assets/james-innovation-logo.svg" alt="James Innovation — Create Build Grow"></a><nav><a href="index.html">Home</a><a aria-current="page" href="about.html">About</a><a href="services.html">Services</a><a href="products-reviews.html">Projects / Reviews</a><a href="contact.html">Contact</a></nav></header>
+<body class="about-page"><header><a class="brand" href="index.html"><img src="assets/james-innovation-logo.svg" alt="James Innovation — Create Build Grow"></a><nav><a href="index.html">Home</a><a aria-current="page" href="about.html">About</a><a href="services.html">Services</a><a href="products-reviews.html">Projects / Reviews</a><a href="contact.html">Contact</a></nav></header>
 <main class="wrap">
 <p class="eyebrow">ABOUT THE BRAND</p><h1>Meet the person behind <em>James Innovation.</em></h1>
 <p class="lead">I’m James John Victor, a web designer and digital marketing specialist building James Innovation around one simple idea: help businesses show up professionally online and make practical improvements that support growth.</p>
+<section class="about-visual-scene" aria-label="James Innovation visual showcase">
+  <div class="about-scene-glow"></div>
+  <div class="about-image-card about-image-main" data-depth="1.1">
+    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Modern creative workspace" loading="lazy">
+    <span class="image-card-caption">IDEAS INTO REALITY</span>
+  </div>
+  <div class="about-image-card about-image-side" data-depth="1.8">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Digital analytics on a screen" loading="lazy">
+    <span class="image-card-caption">DIGITAL GROWTH</span>
+  </div>
+  <div class="about-image-card about-image-small" data-depth="2.3">
+    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=85" alt="Creative design process" loading="lazy">
+    <span class="image-card-caption">CREATE · BUILD · GROW</span>
+  </div>
+  <p class="about-scene-note">Scroll to explore <span aria-hidden="true">↓</span></p>
+</section>
 <section class="split"><div><h2>What I do</h2><p>I work across website design and development, e-commerce platforms such as Shopify, SEO and search visibility, social media promotion, promotional graphics and website improvement. My goal is to help business owners bring their online presence closer to the quality of the products or services they provide.</p><p>I’m especially interested in e-commerce businesses and growing brands that need a clear website, a more useful online store or affordable promotional support.</p></div><div class="feature-panel"><p class="eyebrow">THE MISSION</p><h2>Create. Build. Grow.</h2><p><strong>Create:</strong> communicate the brand with purposeful design and content.</p><p><strong>Build:</strong> establish a useful digital foundation through websites and online stores.</p><p><strong>Grow:</strong> improve visibility and customer journeys with thoughtful promotion and optimization.</p></div></section>
 <section><p class="eyebrow">HOW I APPROACH PROJECTS</p><h2>Work that starts with your business goals</h2><div class="grid"><article><h3>1. Understand the need</h3><p>We discuss your business, customers, current challenges and what you want the project to achieve.</p></article><article><h3>2. Agree on the scope</h3><p>We identify the most useful deliverables, timeframe and a budget that makes sense for the work.</p></article><article><h3>3. Design and build</h3><p>I work on the agreed solution, keeping the content, usability and brand presentation in focus.</p></article><article><h3>4. Review and improve</h3><p>We review the work against the agreed requirements and identify sensible next steps.</p></article></div></section>
 <section><p class="eyebrow">WHAT MATTERS TO ME</p><h2>Principles behind the work</h2><div class="grid"><article><h3>Clarity</h3><p>Visitors should quickly understand what a business offers and how to take the next step.</p></article><article><h3>Usability</h3><p>Pages should be easy to navigate on phones as well as larger screens.</p></article><article><h3>Practical value</h3><p>Recommendations should relate to real business needs rather than adding features without a purpose.</p></article><article><h3>Honest expectations</h3><p>Digital work can support visibility and enquiries, but results depend on factors such as the offer, market, budget and execution. I don’t promise guaranteed sales.</p></article></div></section>
 <section class="reviewbox"><p class="eyebrow">LET’S TALK</p><h2>Have a business goal you want to work on?</h2><p>Whether you’re starting from scratch or improving an existing online presence, send me a message by email and tell me what you need.</p><a class="btn" href="contact.html">Contact James Innovation ↗</a><p class="fine">jamesinnovation001@gmail.com</p></section>
-</main><footer><div class="footer-menu-row"><span class="footer-copy">© <span id="year"></span> James Innovation · Create · Build · Grow · <a href="contact.html">Contact</a></span><a class="trusted-badge trusted-badge-3d" href="about.html#customer-care" aria-label="James Innovation customer trust information"><span class="trusted-seal"><span class="trusted-face trusted-front"><span class="trusted-check" aria-hidden="true">✓</span><span class="trusted-label">TRUSTED</span></span><span class="trusted-face trusted-back"><span class="trusted-check" aria-hidden="true">✓</span><span class="trusted-label">TRUSTED</span></span></span></a></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+</main><script>
+(() => {
+  const scene = document.querySelector('.about-visual-scene');
+  if (!scene) return;
+  const cards = [...scene.querySelectorAll('[data-depth]')];
+  let ticking = false;
+  const update = () => {
+    const rect = scene.getBoundingClientRect();
+    const progress = Math.max(-1, Math.min(1, (window.innerHeight * .5 - (rect.top + rect.height * .5)) / (window.innerHeight + rect.height * .5)));
+    cards.forEach((card, i) => {
+      const depth = Number(card.dataset.depth || 1);
+      const rotate = progress * (i % 2 ? -10 : 12) * depth;
+      const y = progress * -34 * depth;
+      const scale = 1 + Math.abs(progress) * .045 * depth;
+      card.style.transform = 'translate3d(0,' + y + 'px,0) rotateY(' + rotate + 'deg) rotateX(' + (-progress * 5 * depth) + 'deg) scale(' + scale + ')';
+      card.style.filter = 'saturate(' + (1 + Math.abs(progress) * .45) + ') brightness(' + (1 - Math.abs(progress) * .08) + ')';
+    });
+    ticking = false;
+  };
+  const requestUpdate = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+  window.addEventListener('scroll', requestUpdate, { passive: true });
+  window.addEventListener('resize', requestUpdate);
+  update();
+})();
+</script><footer><div class="footer-menu-row"><span class="footer-copy">© <span id="year"></span> James Innovation · Create · Build · Grow · <a href="contact.html">Contact</a></span><a class="trusted-badge trusted-badge-3d" href="about.html#customer-care" aria-label="James Innovation customer trust information"><span class="trusted-seal"><span class="trusted-face trusted-front"><span class="trusted-check" aria-hidden="true">✓</span><span class="trusted-label">TRUSTED</span></span><span class="trusted-face trusted-back"><span class="trusted-check" aria-hidden="true">✓</span><span class="trusted-label">TRUSTED</span></span></span></a></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
