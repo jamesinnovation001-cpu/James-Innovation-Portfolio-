@@ -47,3 +47,12 @@ nav a:hover{transform:translateY(-2px);text-decoration:none}
   .grid article,.reviewbox,.feature-panel,.project-card,.iframe-shell,.btn,nav a{transition:none}
   .grid article:hover,.reviewbox:hover,.feature-panel:hover,.project-card:hover,.btn:hover,.btn:active,nav a:hover{transform:none}
 }
+
+
+/* Customer trust badge in the footer */
+footer{display:flex;flex-direction:column;align-items:center;gap:14px}
+.trust-badge{display:flex;align-items:center;gap:11px;text-align:left;max-width:100%;padding:11px 16px;border:1px solid rgba(105,186,255,.42);border-radius:14px;background:linear-gradient(135deg,rgba(8,123,255,.13),rgba(255,255,255,.035));box-shadow:0 8px 22px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.07)}
+.trust-icon{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:linear-gradient(145deg,#087bff,#00b9f4);color:#fff;font-size:18px;font-weight:950;box-shadow:0 3px 10px rgba(0,123,255,.3)}
+.trust-badge strong{display:block;color:#f4f7ff;font-size:13px;line-height:1.4}
+.trust-badge small{display:block;color:#bdc9dc;font-size:11px;line-height:1.5}
+@media(max-width:480px){.trust-badge{padding:10px 12px;gap:9px}.trust-badge small{font-size:10px}}
