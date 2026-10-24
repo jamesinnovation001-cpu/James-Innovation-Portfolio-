@@ -179,15 +179,31 @@ footer{display:block;position:relative;min-height:74px;padding:22px 190px 22px 2
 @media(prefers-reduced-motion:reduce){.review-marquee-track.is-scrolling{animation:none}}
 
 
-/* Footer menu: clean white-to-electric-blue gradient */
+
+
+/* Premium footer menu: deep navy with a restrained electric-blue glow */
 footer{
-  background:linear-gradient(112deg,#ffffff 0%,#f7fbff 24%,#d8efff 52%,#4daeff 78%,#087bff 100%);
-  border-top:1px solid #a9ddff;
-  color:#08254b;
-  box-shadow:0 -10px 34px #087bff20;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:linear-gradient(135deg,#050b18 0%,#081a35 52%,#0a2b55 100%);
+  border-top:1px solid rgba(73,171,255,.55);
+  color:#dceaff;
+  box-shadow:0 -12px 36px rgba(0,91,220,.12);
 }
-.footer-copy{color:#08254b;font-weight:750;text-shadow:0 1px 0 #ffffffaa}
-.footer-copy a{color:#005ce6;font-weight:900;text-decoration:underline;text-underline-offset:3px}
-.footer-copy a:hover{color:#032d76}
-.footer-menu-row .trusted-badge-3d{filter:drop-shadow(0 5px 10px #004fb944)}
-@media(max-width:760px){footer{background:linear-gradient(155deg,#ffffff 0%,#e6f5ff 35%,#74c2ff 70%,#087bff 100%)}}
+footer:before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(ellipse at 50% 120%,rgba(0,145,255,.28),transparent 62%),linear-gradient(90deg,transparent 0%,rgba(0,183,255,.045) 50%,transparent 100%);
+}
+.footer-copy{color:#dceaff;font-weight:650;text-shadow:none}
+.footer-copy a{display:inline-block;color:#65c5ff;font-weight:850;text-decoration:none;text-underline-offset:5px;transition:color .2s ease,text-shadow .2s ease}
+.footer-copy a:hover{color:#fff;text-shadow:0 0 14px rgba(0,183,255,.8);text-decoration:underline}
+.footer-menu-row .trusted-badge-3d{filter:drop-shadow(0 5px 12px rgba(0,111,255,.22))}
+@media(max-width:760px){
+  footer{background:linear-gradient(155deg,#050b18 0%,#081a35 58%,#0a3670 100%)}
+  .footer-copy{line-height:1.9}
+}
