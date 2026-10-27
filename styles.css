@@ -356,3 +356,103 @@ main.wrap>section.hero.tech-image-section>p{margin-top:8px;margin-bottom:8px}
   main.wrap>section.hero.tech-image-section{min-height:0;padding:24px 20px;margin:24px 0 40px}
   main.wrap>section.hero.tech-image-section>h1{font-size:clamp(34px,9vw,48px)}
 }
+
+
+/* Full-section 3D technology treatment for the homepage landscape hero */
+main.wrap>section.hero.tech-image-section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  border:1px solid rgba(91,190,255,.7);
+  background:linear-gradient(125deg,#061024 0%,#08244a 48%,#06152d 100%);
+  box-shadow:0 24px 60px rgba(0,0,0,.48),0 0 0 1px rgba(28,131,255,.18),0 0 34px rgba(0,123,255,.22),inset 0 1px 0 rgba(255,255,255,.16);
+  transform:perspective(1400px) rotateX(.7deg);
+  transform-style:preserve-3d;
+}
+main.wrap>section.hero.tech-image-section:before{
+  content:"";
+  position:absolute;
+  z-index:-2;
+  inset:-14%;
+  width:auto;
+  height:auto;
+  left:auto;
+  top:auto;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 18% 22%,rgba(255,255,255,.24),transparent 26%),
+    radial-gradient(ellipse at 78% 18%,rgba(0,196,255,.28),transparent 34%),
+    radial-gradient(ellipse at 72% 88%,rgba(0,102,255,.32),transparent 38%),
+    linear-gradient(125deg,rgba(4,10,25,.35),rgba(7,40,79,.4)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat;
+  opacity:.95;
+  filter:saturate(1.25) contrast(1.08);
+  transform:translateZ(-35px) scale(1.12);
+  animation:hero3dBackdrop 22s ease-in-out infinite alternate;
+}
+main.wrap>section.hero.tech-image-section:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(100deg,rgba(2,8,22,.91) 0%,rgba(3,14,33,.77) 55%,rgba(2,13,31,.48) 100%),
+    repeating-linear-gradient(0deg,transparent 0 42px,rgba(108,196,255,.065) 43px 44px),
+    repeating-linear-gradient(90deg,transparent 0 42px,rgba(108,196,255,.065) 43px 44px);
+  background-size:auto,44px 44px,44px 44px;
+  mask-image:linear-gradient(110deg,#000 0%,#000 66%,transparent 100%);
+}
+main.wrap>section.hero.tech-image-section>*{
+  position:relative;
+  z-index:1;
+  transform:translateZ(18px);
+}
+main.wrap>section.hero.tech-image-section>.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:7px 12px;
+  border:1px solid rgba(112,202,255,.35);
+  border-radius:999px;
+  background:rgba(4,18,40,.68);
+  box-shadow:0 8px 20px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.13);
+}
+main.wrap>section.hero.tech-image-section>h1{
+  text-shadow:0 4px 22px rgba(0,0,0,.65),0 0 28px rgba(0,124,255,.15);
+}
+main.wrap>section.hero.tech-image-section>.home-profile{
+  position:relative;
+  z-index:2;
+  padding:12px 16px;
+  border:1px solid rgba(109,192,255,.4);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(5,19,42,.86),rgba(10,47,85,.72));
+  box-shadow:0 14px 32px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.14);
+  backdrop-filter:blur(8px);
+}
+main.wrap>section.hero.tech-image-section>.home-profile img{
+  box-shadow:0 10px 26px rgba(0,0,0,.48),0 0 0 3px rgba(83,180,255,.12),0 0 22px rgba(0,123,255,.25);
+}
+main.wrap>section.hero.tech-image-section .btn{
+  box-shadow:0 8px 0 #063e9e,0 13px 25px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.25);
+  transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+}
+main.wrap>section.hero.tech-image-section .btn:hover{
+  transform:translateY(-3px) translateZ(22px);
+  box-shadow:0 11px 0 #063e9e,0 19px 30px rgba(0,0,0,.36),0 0 20px rgba(0,174,255,.25);
+}
+@keyframes hero3dBackdrop{
+  0%{transform:translate3d(-1%,0,0) translateZ(-35px) scale(1.12);filter:saturate(1.1) brightness(.76)}
+  100%{transform:translate3d(1.5%,-1%,0) translateZ(-35px) scale(1.2);filter:saturate(1.4) brightness(1.02)}
+}
+@media(max-width:760px){
+  main.wrap>section.hero.tech-image-section{transform:none;border-radius:20px}
+  main.wrap>section.hero.tech-image-section:after{mask-image:none}
+  main.wrap>section.hero.tech-image-section>*{transform:none}
+  main.wrap>section.hero.tech-image-section>.home-profile{max-width:100%;padding:10px 12px}
+}
+@media(prefers-reduced-motion:reduce){
+  main.wrap>section.hero.tech-image-section:before{animation:none}
+  main.wrap>section.hero.tech-image-section .btn{transition:none}
+}
