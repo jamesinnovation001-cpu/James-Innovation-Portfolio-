@@ -248,3 +248,38 @@ footer .trusted-face small{font-size:6px}
  footer .trusted-badge-3d{position:relative;right:auto;top:auto;bottom:auto;width:70px;height:70px;transform:none;margin:0 auto}
  footer .trusted-badge-3d:hover{transform:scale(1.04)}
 }
+
+
+/* Homepage opening hero: wide landscape composition */
+@media(min-width:761px){
+  main.wrap>section.hero.tech-image-section{
+    display:grid;
+    grid-template-columns:minmax(0,1.45fr) minmax(240px,.75fr);
+    grid-template-areas:
+      "eyebrow portrait"
+      "heading portrait"
+      "intro portrait"
+      "actions portrait"
+      "contact portrait"
+      "services portrait";
+    align-items:center;
+    column-gap:clamp(24px,4vw,56px);
+    row-gap:8px;
+    min-height:390px;
+    padding:clamp(30px,4vw,54px);
+  }
+  main.wrap>section.hero.tech-image-section>.eyebrow{grid-area:eyebrow;margin:0}
+  main.wrap>section.hero.tech-image-section>h1{grid-area:heading;margin:0;max-width:760px}
+  main.wrap>section.hero.tech-image-section>.lead{grid-area:intro;margin:8px 0}
+  main.wrap>section.hero.tech-image-section>.home-profile{grid-area:portrait;align-self:center;justify-self:stretch;flex-direction:column;align-items:center;justify-content:center;gap:14px;width:100%;max-width:340px;margin:0 auto;padding:18px;text-align:center}
+  main.wrap>section.hero.tech-image-section>.home-profile img{width:100%;max-width:300px;height:190px;object-fit:cover;object-position:center 30%;border-radius:16px}
+  main.wrap>section.hero.tech-image-section>.home-profile>span{align-items:center}
+  main.wrap>section.hero.tech-image-section>p:has(.btn){grid-area:actions;margin:8px 0}
+  main.wrap>section.hero.tech-image-section>p:has(a[href*="wa.me"]){grid-area:contact;margin:0}
+  main.wrap>section.hero.tech-image-section>p.fine:last-child{grid-area:services;margin:0}
+}
+@media(max-width:760px){
+  main.wrap>section.hero.tech-image-section{min-height:0}
+  main.wrap>section.hero.tech-image-section>.home-profile{max-width:100%}
+  main.wrap>section.hero.tech-image-section>.home-profile img{width:130px;height:150px}
+}
