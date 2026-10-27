@@ -539,3 +539,56 @@ footer{
 footer .footer-copy{color:#eaf8ff}
 footer .footer-copy a{color:#55d6ff}
 @media(prefers-reduced-motion:reduce){body{scroll-behavior:auto}}
+
+
+/* Accessibility pass: guarantee readable text on both light and dark sections */
+:root{color-scheme:light}
+body{color:#10243d}
+body:not(.about-page) main.wrap>h1,
+body:not(.about-page) main.wrap>h2,
+body:not(.about-page) main.wrap>p:not(.eyebrow),
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) h2,
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) h3{color:#10243d}
+main.wrap>p.eyebrow,main.wrap>section:not(.tech-image-section):not(.hero) .eyebrow{color:#075db8}
+main.wrap>section:not(.tech-image-section):not(.hero) p,
+main.wrap>section:not(.tech-image-section):not(.hero) li{color:#344f69}
+main.wrap>section:not(.tech-image-section):not(.hero) a:not(.btn){color:#075db8}
+main.wrap>section:not(.tech-image-section):not(.hero) .fine{color:#526a80}
+main.wrap>section:not(.tech-image-section):not(.hero) .tag{color:#07549c}
+.tech-image-section h1,.tech-image-section h2,.tech-image-section h3,
+.tech-image-section .eyebrow,.tech-image-section p,.tech-image-section li,
+.tech-image-section label{color:#f7fbff}
+.tech-image-section .section-intro,.tech-image-section p{color:#e4f1ff}
+.tech-image-section .fine{color:#d6e8fa}
+.tech-image-section a:not(.btn){color:#8bdcff}
+.tech-image-section .grid article,
+.tech-image-section article:not(.project-card){
+  background:linear-gradient(145deg,rgba(7,26,51,.97),rgba(8,39,73,.96));
+  border-color:rgba(132,204,255,.55);
+}
+.tech-image-section article h2,.tech-image-section article h3,
+.tech-image-section article p{color:#f7fbff}
+.tech-image-section .tag{color:#eaf8ff;background:#0b4777;border-color:#56bdf3}
+.tech-image-section input,.tech-image-section textarea,.tech-image-section select{
+  color:#10243d;background:#fff;border-color:#91b9d4
+}
+.tech-image-section input::placeholder,.tech-image-section textarea::placeholder{color:#61788e}
+.about-page main.wrap>p.eyebrow{color:#075db8}
+.about-page main.wrap>h1{color:#10243d}
+.about-page main.wrap>p.lead{color:#344f69}
+.about-page main.wrap>section:not(.about-tech-background) h2,
+.about-page main.wrap>section:not(.about-tech-background) h3{color:#10243d}
+.about-page main.wrap>section:not(.about-tech-background) p{color:#344f69}
+.about-page main.wrap>section:not(.about-tech-background) .feature-panel{
+ background:linear-gradient(145deg,#fff,#eaf8ff);border-color:#c5e1f2
+}
+.about-page main.wrap>section:not(.about-tech-background) .feature-panel h2,
+.about-page main.wrap>section:not(.about-tech-background) .feature-panel p{color:#10243d}
+.about-page .about-tech-background h2,.about-page .about-tech-background p,
+.about-page .about-tech-background .eyebrow{color:#f7fbff}
+.about-page .about-tech-background .founder-hero-name{color:#fff}
+footer .footer-copy{color:#eaf8ff}
+footer .trusted-label{color:#fff}
+@media(max-width:760px){
+  main.wrap>section:not(.tech-image-section):not(.hero) p{overflow-wrap:anywhere}
+}
