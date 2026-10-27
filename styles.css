@@ -325,3 +325,34 @@ footer .trusted-face small{font-size:6px}
   main.wrap>section.hero.tech-image-section>.home-profile{flex-direction:row;align-items:center}
   main.wrap>section.hero.tech-image-section>.home-profile img{width:130px;height:150px}
 }
+
+
+/* Landscape-shaped homepage hero panel: wider than it is tall */
+main.wrap>section.hero.tech-image-section{
+  width:100%;
+  max-width:none;
+  min-height:0;
+  aspect-ratio:auto;
+  padding:clamp(26px,4vw,48px);
+  margin:28px 0 52px;
+  border-radius:28px;
+}
+main.wrap>section.hero.tech-image-section>h1{
+  max-width:900px;
+  font-size:clamp(36px,5.4vw,62px);
+  margin:10px 0 14px;
+}
+main.wrap>section.hero.tech-image-section>.lead{
+  max-width:920px;
+  margin:0 0 18px;
+  font-size:clamp(16px,1.6vw,19px);
+}
+main.wrap>section.hero.tech-image-section>.home-profile{margin:14px 0 8px}
+main.wrap>section.hero.tech-image-section>p{margin-top:8px;margin-bottom:8px}
+@media(min-width:761px){
+  main.wrap>section.hero.tech-image-section{min-height:310px}
+}
+@media(max-width:760px){
+  main.wrap>section.hero.tech-image-section{min-height:0;padding:24px 20px;margin:24px 0 40px}
+  main.wrap>section.hero.tech-image-section>h1{font-size:clamp(34px,9vw,48px)}
+}
