@@ -283,3 +283,45 @@ footer .trusted-face small{font-size:6px}
   main.wrap>section.hero.tech-image-section>.home-profile{max-width:100%}
   main.wrap>section.hero.tech-image-section>.home-profile img{width:130px;height:150px}
 }
+
+
+/* Corrected: make the whole homepage intro section landscape, not the portrait */
+@media(min-width:761px){
+  main.wrap>section.hero.tech-image-section{
+    display:block;
+    width:100%;
+    max-width:none;
+    min-height:400px;
+    padding:clamp(38px,5vw,66px);
+    margin:28px 0 58px;
+  }
+  main.wrap>section.hero.tech-image-section>.eyebrow,
+  main.wrap>section.hero.tech-image-section>h1,
+  main.wrap>section.hero.tech-image-section>.lead,
+  main.wrap>section.hero.tech-image-section>.home-profile,
+  main.wrap>section.hero.tech-image-section>p{
+    grid-area:auto;
+  }
+  main.wrap>section.hero.tech-image-section>h1{max-width:850px}
+  main.wrap>section.hero.tech-image-section>.lead{max-width:850px}
+  main.wrap>section.hero.tech-image-section>.home-profile{
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+    width:auto;
+    max-width:520px;
+    margin:20px 0 10px;
+    padding:0;
+    text-align:left;
+    background:transparent;
+    border:0;
+    box-shadow:none;
+  }
+  main.wrap>section.hero.tech-image-section>.home-profile img{width:76px;height:88px;max-width:none}
+  main.wrap>section.hero.tech-image-section>.home-profile>span{align-items:flex-start}
+}
+@media(max-width:760px){
+  main.wrap>section.hero.tech-image-section{width:auto;max-width:none}
+  main.wrap>section.hero.tech-image-section>.home-profile{flex-direction:row;align-items:center}
+  main.wrap>section.hero.tech-image-section>.home-profile img{width:130px;height:150px}
+}
