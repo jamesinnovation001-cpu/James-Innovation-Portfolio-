@@ -592,3 +592,28 @@ footer .trusted-label{color:#fff}
 @media(max-width:760px){
   main.wrap>section:not(.tech-image-section):not(.hero) p{overflow-wrap:anywhere}
 }
+
+
+/* About hero readability fix: darken the technology image behind the mission text */
+.about-page .about-founder-hero .tech-background-overlay{
+  z-index:0;
+  background:linear-gradient(90deg,rgba(3,10,25,.88) 0%,rgba(4,18,40,.84) 52%,rgba(4,18,40,.76) 100%),linear-gradient(0deg,rgba(2,8,20,.38),rgba(0,123,255,.08));
+}
+.about-page .about-founder-hero .tech-background-image{z-index:-1}
+.about-page .about-founder-hero .founder-hero-photo,
+.about-page .about-founder-hero .tech-background-content{z-index:1}
+.about-page .about-founder-hero .tech-background-content{ text-shadow:0 2px 8px rgba(0,0,0,.95),0 0 22px rgba(0,0,0,.75) }
+.about-page .about-founder-hero .tech-background-content .eyebrow{
+  color:#8be8ff;font-weight:900;text-shadow:0 2px 5px #000;
+}
+.about-page .about-founder-hero .tech-background-content h2{
+  color:#fff;font-weight:900;text-shadow:0 3px 10px rgba(0,0,0,.95);letter-spacing:-.025em;
+}
+.about-page .about-founder-hero .tech-background-content>p:not(.eyebrow){
+  color:#fff;font-weight:600;line-height:1.75;text-shadow:0 2px 7px rgba(0,0,0,.95);
+}
+@media(max-width:700px){
+  .about-page .about-founder-hero .tech-background-overlay{
+    background:linear-gradient(180deg,rgba(3,10,25,.78),rgba(4,18,40,.9));
+  }
+}
