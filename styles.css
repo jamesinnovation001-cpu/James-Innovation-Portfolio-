@@ -456,3 +456,37 @@ main.wrap>section.hero.tech-image-section .btn:hover{
   main.wrap>section.hero.tech-image-section:before{animation:none}
   main.wrap>section.hero.tech-image-section .btn{transition:none}
 }
+
+
+/* Homepage founder portrait clarity fix: keep the real photo sharp and unobstructed */
+main.wrap>section.hero.tech-image-section>.home-profile{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  width:fit-content;
+  max-width:100%;
+  padding:12px 16px;
+  background:rgba(4,14,32,.88);
+  border:1px solid rgba(109,192,255,.48);
+  backdrop-filter:none;
+}
+main.wrap>section.hero.tech-image-section>.home-profile img{
+  display:block;
+  width:clamp(112px,14vw,168px);
+  height:clamp(132px,17vw,196px);
+  max-width:none;
+  flex:0 0 auto;
+  object-fit:contain;
+  object-position:center center;
+  filter:none;
+  opacity:1;
+  mix-blend-mode:normal;
+  transform:none;
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 4px 18px rgba(0,0,0,.28),0 0 0 2px rgba(83,180,255,.2);
+}
+@media(max-width:760px){
+  main.wrap>section.hero.tech-image-section>.home-profile{width:100%;gap:14px;padding:10px 12px}
+  main.wrap>section.hero.tech-image-section>.home-profile img{width:116px;height:142px;object-fit:contain}
+}
