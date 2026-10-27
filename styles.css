@@ -490,3 +490,52 @@ main.wrap>section.hero.tech-image-section>.home-profile img{
   main.wrap>section.hero.tech-image-section>.home-profile{width:100%;gap:14px;padding:10px 12px}
   main.wrap>section.hero.tech-image-section>.home-profile img{width:116px;height:142px;object-fit:contain}
 }
+
+
+/* James Innovation refreshed signature palette: ice blue + white + deep blue */
+:root{
+  --navy:#081b33;
+  --panel:#ffffff;
+  --line:#c5e1f2;
+  --blue:#087bff;
+  --cyan:#00cfff;
+  --ink:#10243d;
+  --muted:#405a73;
+}
+body{
+  background:linear-gradient(145deg,#eaf8ff 0%,#ffffff 46%,#eaf8ff 100%);
+  color:#10243d;
+}
+.wrap{position:relative}
+main.wrap>p.eyebrow,
+main.wrap>h1,
+main.wrap>h2,
+main.wrap>section:not(.hero):not(.tech-image-section) h2,
+main.wrap>section:not(.hero):not(.tech-image-section) h3{color:#081b33}
+main.wrap>p.lead{color:#344f69}
+main.wrap>section:not(.tech-image-section):not(.hero) .lead,
+main.wrap>section:not(.tech-image-section):not(.hero) p{color:#344f69}
+main.wrap>section:not(.tech-image-section):not(.hero) .eyebrow{color:#087bff}
+.grid article,.reviewbox,.feature-panel{
+  background:linear-gradient(145deg,#ffffff 0%,#f6fcff 100%);
+  border-color:#c5e1f2;
+  box-shadow:0 12px 30px rgba(8,27,51,.09),inset 0 1px #fff;
+}
+.grid article h2,.grid article h3,.reviewbox h2,.feature-panel h2,
+.grid article strong,.reviewbox strong,.feature-panel strong{color:#081b33}
+.grid article p,.split p,.reviewbox p,.feature-panel p{color:#344f69}
+.grid article a{color:#087bff}
+.tag{color:#07549c;background:#eaf8ff;border-color:#a9dcf7}
+input,textarea,select{background:#fff;color:#10243d;border-color:#b7d6e9}
+input::placeholder,textarea::placeholder{color:#71869a}
+label{color:#173651}
+main.wrap>section.split .feature-panel{background:linear-gradient(145deg,#fff,#eaf8ff)}
+main.wrap>section:not(.tech-image-section):not(.hero) .btn.secondary{color:#081b33!important;border-color:#87b8dc}
+footer{
+  background:linear-gradient(135deg,#06152b 0%,#082b50 58%,#07528a 100%);
+  border-top:1px solid #55d6ff;
+  color:#fff;
+}
+footer .footer-copy{color:#eaf8ff}
+footer .footer-copy a{color:#55d6ff}
+@media(prefers-reduced-motion:reduce){body{scroll-behavior:auto}}
