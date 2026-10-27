@@ -617,3 +617,11 @@ footer .trusted-label{color:#fff}
     background:linear-gradient(180deg,rgba(3,10,25,.78),rgba(4,18,40,.9));
   }
 }
+
+
+/* Explicitly keep the About mission headline pure white */
+.about-page .about-founder-hero .tech-background-content h2,
+.about-page .about-founder-hero .tech-background-content h2 *{
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff !important;
+}
