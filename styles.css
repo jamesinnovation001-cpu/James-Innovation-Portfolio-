@@ -839,3 +839,12 @@ footer{background:linear-gradient(125deg,#050914 0%,#081b33 42%,#07528a 78%,#00b
 footer .footer-copy{color:#eaf8ff!important}
 footer .footer-copy a{color:#55d6ff!important}
 @media(max-width:760px){body{background-attachment:scroll!important}}
+
+/* Electric-blue social icons in the footer */
+.footer-menu-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer-socials{display:flex;align-items:center;gap:15px;order:2}
+.footer-socials a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(40,125,255,.42);border-radius:50%;color:#287dff;background:rgba(40,125,255,.08);transition:color .2s ease,background .2s ease,transform .2s ease,box-shadow .2s ease}
+.footer-socials svg{width:20px;height:20px;display:block}
+.footer-socials a:hover,.footer-socials a:focus-visible{color:#55d6ff;background:rgba(40,125,255,.2);transform:translateY(-3px);box-shadow:0 0 16px rgba(40,125,255,.4);outline:none}
+.footer-copy{order:1}
+@media(max-width:600px){.footer-menu-row{justify-content:center;text-align:center}.footer-socials{width:100%;justify-content:center;order:1}.footer-copy{order:2}}
