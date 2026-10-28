@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="title desc">
 <title id="title">James Innovation</title><desc id="desc">James Innovation logo in electric blue, black and silver, with a technology lightbulb and the Create Build Grow tagline.</desc>
 <defs>
  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00eaff"/><stop offset=".35" stop-color="#087bff"/><stop offset="1" stop-color="#001fbc"/></linearGradient>
@@ -23,6 +23,8 @@
 </g>
 <g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
  <text x="380" y="258" font-size="66" font-weight="900" letter-spacing="1" fill="url(#black)" stroke="url(#silver)" stroke-width="1.4">JAMES</text>
- <text x="380" y="282" font-size="24" font-weight="800" letter-spacing="9" fill="#087bff">INNOVATION</text>
+ <text x="380" y="277" font-size="24" font-weight="800" letter-spacing="9" fill="#087bff">INNOVATION</text>
+ <text x="380" y="309" font-size="16" font-weight="800" letter-spacing="8" fill="#f4f7ff">CREATE</text>
+ <circle cx="430" cy="304" r="4" fill="#087bff"/><text x="500" y="309" font-size="16" font-weight="800" letter-spacing="8" fill="#f4f7ff">BUILD</text><circle cx="563" cy="304" r="4" fill="#087bff"/><text x="628" y="309" font-size="16" font-weight="800" letter-spacing="6" fill="#f4f7ff">GROW</text>
 </g>
 </svg>
