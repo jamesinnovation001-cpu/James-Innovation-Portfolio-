@@ -625,3 +625,38 @@ footer .trusted-label{color:#fff}
   color:#ffffff !important;
   -webkit-text-fill-color:#ffffff !important;
 }
+
+
+/* Homepage scrolling client reviews: restore a clearly visible section and refresh its colors */
+main.wrap>section.review-marquee-section{
+  display:block!important;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:clamp(24px,4vw,42px);
+  margin:48px 0;
+  border:1px solid #9bdcff;
+  border-radius:24px;
+  background:linear-gradient(135deg,#eaf8ff 0%,#ffffff 48%,#dff4ff 100%);
+  box-shadow:0 18px 42px rgba(8,27,51,.14),inset 0 1px 0 #fff;
+}
+main.wrap>section.review-marquee-section .eyebrow{color:#087bff!important}
+main.wrap>section.review-marquee-section h2{color:#081b33!important}
+main.wrap>section.review-marquee-section .section-intro{color:#344f69!important}
+main.wrap>section.review-marquee-section .marquee-window{
+  display:block;
+  width:100%;
+  min-height:66px;
+  padding:20px 0;
+  margin:24px 0;
+  border:1px solid #9bdcff;
+  border-radius:14px;
+  background:linear-gradient(90deg,#081b33 0%,#0b3764 50%,#081b33 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 8px 22px rgba(8,27,51,.15);
+}
+main.wrap>section.review-marquee-section .marquee-track{display:flex!important;visibility:visible!important;opacity:1!important;animation:review-scroll 32s linear infinite}
+main.wrap>section.review-marquee-section .marquee-track span{color:#fff!important}
+main.wrap>section.review-marquee-section .marquee-track span:nth-child(even){color:#55d6ff!important}
+main.wrap>section.review-marquee-section .btn.secondary{color:#081b33!important;border-color:#087bff!important;background:#fff!important}
+main.wrap>section.review-marquee-section .btn.secondary:hover{background:#eaf8ff!important}
+@media(max-width:760px){main.wrap>section.review-marquee-section{padding:22px 16px;margin:36px 0;border-radius:18px}main.wrap>section.review-marquee-section .marquee-window{margin:18px 0}}
