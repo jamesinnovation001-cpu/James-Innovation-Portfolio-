@@ -671,3 +671,13 @@ main.wrap>section.review-marquee-section{
 main.wrap>section.review-marquee-section .eyebrow{color:#064fa8!important}
 main.wrap>section.review-marquee-section h2{color:#081b33!important}
 main.wrap>section.review-marquee-section .section-intro{color:#102f50!important}
+
+
+/* Whole-site background: ice blue flowing into electric blue across every page */
+html,body{min-height:100%;}
+body{
+  background:linear-gradient(135deg,#eaf8ff 0%,#c8edff 24%,#77c9ff 52%,#278dff 78%,#087bff 100%) !important;
+  background-attachment:fixed !important;
+  color:#10243d;
+}
+@media(max-width:760px){body{background-attachment:scroll!important}}
