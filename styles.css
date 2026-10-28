@@ -773,38 +773,40 @@ footer{background:linear-gradient(110deg,#040a15,#0a3154)!important;border-top:1
 @media(max-width:760px){.wrap{width:calc(100% - 28px);padding-top:34px}.hero{padding:26px 20px 30px;border-radius:22px}.hero:after{width:220px;height:220px;right:-90px;top:-65px}main section{margin-top:38px;margin-bottom:38px}main.wrap>section.review-marquee-section{padding:20px!important}}
 
 
-/* FINAL BRAND BACKGROUND COMBINATION: ice blue → white → electric blue, balanced with midnight navy → deep blue → cyan */
+
+
+/* FINAL BRAND BACKGROUND: midnight navy → deep blue → cyan */
 html,body{min-height:100%}
 body{
   background:
-    radial-gradient(ellipse at 8% 4%,rgba(255,255,255,.95) 0%,rgba(255,255,255,.45) 23%,transparent 42%),
-    linear-gradient(132deg,#eaf8ff 0%,#ffffff 28%,#c8edff 49%,#278dff 76%,#087bff 100%) !important;
+    radial-gradient(ellipse at 12% 5%,rgba(0,207,255,.18) 0%,transparent 34%),
+    radial-gradient(ellipse at 88% 40%,rgba(8,123,255,.23) 0%,transparent 38%),
+    linear-gradient(135deg,#050914 0%,#081b33 38%,#07528a 72%,#06152b 100%) !important;
   background-attachment:fixed !important;
-  color:#10243d !important;
+  color:#f4f8ff !important;
 }
-/* Clean light header and readable light sections */
-header{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #b9def4;box-shadow:0 8px 28px rgba(8,27,51,.12)}
+header{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #c8dff3;box-shadow:0 8px 28px rgba(0,0,0,.18)}
 body:not(.about-page) main.wrap>h1,
 body:not(.about-page) main.wrap>h2,
 body:not(.about-page) main.wrap>p:not(.eyebrow),
 body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) h2,
-body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) h3{color:#081b33!important}
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) h3{color:#f4f8ff!important}
 body:not(.about-page) main.wrap>p.lead,
-body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) p{color:#24445f!important}
-body:not(.about-page) main.wrap>p.eyebrow,
-body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) .eyebrow{color:#075db8!important}
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) p{color:#d7e9ff!important}
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) .eyebrow{color:#55d6ff!important}
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) a:not(.btn){color:#8bdcff!important}
+body:not(.about-page) main.wrap>section:not(.tech-image-section):not(.hero) .fine{color:#c2d7ee!important}
 .grid article,.reviewbox,.feature-panel{
-  background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(234,248,255,.96))!important;
-  border:1px solid #a9d7f1!important;
-  box-shadow:0 14px 32px rgba(8,27,51,.12),inset 0 1px #fff!important;
+  background:linear-gradient(145deg,#102744 0%,#081b33 100%)!important;
+  border:1px solid #275783!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.07)!important;
 }
-.grid article h2,.grid article h3,.reviewbox h2,.feature-panel h2,
-.grid article strong,.reviewbox strong,.feature-panel strong{color:#081b33!important}
-.grid article p,.split p,.reviewbox p,.feature-panel p{color:#24445f!important}
-input,textarea,select{background:#fff!important;color:#10243d!important;border-color:#9fc9e5!important}
-input::placeholder,textarea::placeholder{color:#617b91!important}
-label{color:#173651!important}
-/* Midnight navy → deep blue → cyan feature panels provide strong contrast */
+.grid article h2,.grid article h3,.reviewbox h2,.feature-panel h2,.grid article strong,.reviewbox strong,.feature-panel strong{color:#f4f8ff!important}
+.grid article p,.split p,.reviewbox p,.feature-panel p{color:#d7e9ff!important}
+.tag{color:#dff8ff!important;background:#0b3764!important;border-color:#00b9f4!important}
+input,textarea,select{background:#06152b!important;color:#f4f8ff!important;border-color:#3475a8!important}
+input::placeholder,textarea::placeholder{color:#a8c3dc!important}
+label{color:#eaf6ff!important}
 main.wrap>section.hero.tech-image-section,
 main.wrap>section.tech-image-section,
 main.wrap>section.review-marquee-section{
@@ -829,8 +831,10 @@ main.wrap>section.review-marquee-section .marquee-window{background:linear-gradi
 main.wrap>section.review-marquee-section .marquee-track span{color:#fff!important}
 main.wrap>section.review-marquee-section .marquee-track span:nth-child(even){color:#55d6ff!important}
 main.wrap>section.review-marquee-section .btn.secondary{background:#fff!important;color:#081b33!important;border-color:#fff!important}
-/* Keep About's cinematic image section dark and legible */
-.about-page .about-tech-background{background:linear-gradient(130deg,#050914,#081b33,#07528a,#00bfe8)!important}
+.about-page main.wrap>h1,.about-page main.wrap>section:not(.about-tech-background) h2,.about-page main.wrap>section:not(.about-tech-background) h3{color:#f4f8ff!important}
+.about-page main.wrap>p.lead,.about-page main.wrap>section:not(.about-tech-background) p{color:#d7e9ff!important}
+.about-page main.wrap>section:not(.about-tech-background) .feature-panel{background:linear-gradient(145deg,#102744,#081b33)!important;border-color:#275783!important}
+.about-page main.wrap>section:not(.about-tech-background) .feature-panel h2,.about-page main.wrap>section:not(.about-tech-background) .feature-panel p{color:#f4f8ff!important}
 footer{background:linear-gradient(125deg,#050914 0%,#081b33 42%,#07528a 78%,#00bfe8 100%)!important;border-top:1px solid #55d6ff!important;color:#fff!important}
 footer .footer-copy{color:#eaf8ff!important}
 footer .footer-copy a{color:#55d6ff!important}
