@@ -730,3 +730,44 @@ main.wrap>section.review-marquee-section h2{color:#fff!important;}
 main.wrap>section.review-marquee-section .section-intro{color:#e1f2ff!important;}
 main.wrap>section.review-marquee-section .btn.secondary{background:#fff!important;color:#081b33!important;}
 @media(max-width:760px){body{background-attachment:scroll!important}}
+
+
+/* ALTERNATE TEMPLATE: premium digital-agency layout, neon blue accents, glass panels */
+:root{--navy:#050914;--panel:#0b1b32;--line:#25466a;--blue:#087bff;--cyan:#00cfff;--ink:#f4f8ff;--muted:#c4d6ea}
+body{
+ background:
+  radial-gradient(ellipse at 82% 8%,rgba(0,207,255,.16),transparent 30%),
+  radial-gradient(ellipse at 12% 36%,rgba(8,123,255,.17),transparent 34%),
+  linear-gradient(145deg,#050914 0%,#081b33 52%,#061329 100%)!important;
+ color:#f4f8ff!important;
+}
+header{background:rgba(255,255,255,.97);box-shadow:0 8px 28px rgba(0,0,0,.18);border-bottom:1px solid #c8dff3}
+.wrap{width:min(1160px,calc(100% - 42px));padding-top:64px;padding-bottom:78px}
+.hero{max-width:1000px;padding:36px 30px 42px;border:1px solid rgba(85,214,255,.25);border-radius:28px;background:linear-gradient(125deg,rgba(13,40,72,.88),rgba(5,15,31,.58));box-shadow:0 24px 70px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.08);overflow:hidden}
+.hero:after{content:"";position:absolute;right:-90px;top:-120px;width:330px;height:330px;border:1px solid rgba(0,207,255,.24);border-radius:50%;box-shadow:0 0 0 28px rgba(0,207,255,.035),0 0 0 58px rgba(8,123,255,.035);pointer-events:none}
+.eyebrow{color:#55d6ff!important;letter-spacing:.2em}
+h1{color:#f7fbff!important;max-width:950px;text-shadow:0 8px 35px rgba(0,0,0,.32)}
+h1 em{background:linear-gradient(100deg,#55d6ff 0%,#087bff 60%,#b6f4ff 100%);background-clip:text}
+.lead,.section-intro{color:#d3e6f8!important}
+main.wrap>p:not(.eyebrow),main.wrap>h2,main.wrap>h3{color:#eaf5ff}
+main section{margin-top:54px;margin-bottom:54px}
+.grid{gap:20px}
+.grid article,.reviewbox,.feature-panel,.project-card{background:linear-gradient(145deg,rgba(16,42,72,.96),rgba(7,20,39,.98))!important;border:1px solid rgba(105,186,255,.28)!important;border-radius:22px!important;box-shadow:0 16px 34px rgba(0,0,0,.26),inset 0 1px rgba(255,255,255,.07)!important}
+.grid article{position:relative;overflow:hidden}
+.grid article:before{content:"";display:block;width:48px;height:3px;border-radius:5px;background:linear-gradient(90deg,#087bff,#00cfff);margin-bottom:18px}
+.grid article h2,.grid article h3,.reviewbox h2,.feature-panel h2,.project-card h3{color:#f6fbff!important}
+.grid article p,.split p,.reviewbox p,.feature-panel p,.project-card p{color:#c7dbee!important}
+.tag{color:#dffaff!important;background:rgba(8,123,255,.18)!important;border-color:rgba(0,207,255,.58)!important}
+.btn{border-radius:999px!important;padding:13px 23px!important;background:linear-gradient(110deg,#087bff,#00aeea)!important;box-shadow:0 7px 0 #06478e,0 14px 30px rgba(0,123,255,.24)!important}
+.btn.secondary{background:transparent!important;border:1px solid #55d6ff!important;color:#eaf8ff!important}
+.project-rail{scrollbar-color:#00cfff #081b33}
+.marquee-window{background:linear-gradient(90deg,rgba(8,123,255,.13),rgba(0,207,255,.08))!important;border-color:rgba(85,214,255,.35)!important}
+.marquee-track span{color:#f5faff!important}.marquee-track span:nth-child(even){color:#55d6ff!important}
+main.wrap>section.review-marquee-section{background:linear-gradient(125deg,#0b1b32,#07528a 72%,#087bff)!important;border:1px solid rgba(85,214,255,.6)!important;border-radius:24px!important;padding:28px!important}
+main.wrap>section.review-marquee-section h2{color:#fff!important}
+main.wrap>section.review-marquee-section .section-intro{color:#e1f2ff!important}
+input,textarea,select{background:#061329!important;color:#f4f8ff!important;border-color:#315c82!important}
+label{color:#e6f5ff!important}
+footer{background:linear-gradient(110deg,#040a15,#0a3154)!important;border-top:1px solid rgba(85,214,255,.35)!important}
+.footer-copy{color:#d8e9f8!important}
+@media(max-width:760px){.wrap{width:calc(100% - 28px);padding-top:34px}.hero{padding:26px 20px 30px;border-radius:22px}.hero:after{width:220px;height:220px;right:-90px;top:-65px}main section{margin-top:38px;margin-bottom:38px}main.wrap>section.review-marquee-section{padding:20px!important}}
