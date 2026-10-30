@@ -89,6 +89,44 @@ export default async function handler(req, res) {
       contentType: "application/json; charset=utf-8",
       token: process.env.BLOB_READ_WRITE_TOKEN
     });
+
+    // Email is best-effort: a notification failure must not undo a saved review.
+    if (process.env.RESEND_API_KEY && process.env.REVIEW_NOTIFICATION_EMAIL && process.env.REVIEW_FROM_EMAIL) {
+      try {
+        const stars = "★".repeat(rating) + "☆".repeat(5 - rating);
+        const emailText = [
+          "A new review has been submitted on James Innovation.",
+          "",
+          "Name: " + name,
+          "Business: " + business,
+          "Rating: " + stars + " (" + rating + "/5)",
+          "",
+          "Review:",
+          message,
+          "",
+          "Submitted: " + review.createdAt
+        ].join("\\n");
+        const emailResponse = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer " + process.env.RESEND_API_KEY,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            from: process.env.REVIEW_FROM_EMAIL,
+            to: [process.env.REVIEW_NOTIFICATION_EMAIL],
+            subject: "New client review — James Innovation",
+            text: emailText
+          })
+        });
+        if (!emailResponse.ok) {
+          console.error("Review notification email failed:", emailResponse.status, await emailResponse.text());
+        }
+      } catch (emailError) {
+        console.error("Review notification email error:", emailError);
+      }
+    }
+
     return json(res, 201, { review });
   } catch (error) {
     return json(res, 500, { error: "We couldn't save your review. Please try again shortly." });
