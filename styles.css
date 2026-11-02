@@ -862,8 +862,8 @@ footer .footer-copy a{color:#55d6ff!important}
     gap: 12px;
   }
   .about-page .about-founder-hero .founder-hero-photo img {
-    width: min(76vw, 300px) !important;
-    max-width: 300px !important;
+    width: min(68vw, 250px) !important;
+    max-width: 250px !important;
     height: auto !important;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
