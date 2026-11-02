@@ -888,3 +888,14 @@ footer .footer-copy a{color:#55d6ff!important}
     margin-right: auto !important;
   }
 }
+
+
+/* Founder name beneath portrait: white lettering with a blue glow */
+.about-page .about-founder-hero .founder-hero-name {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(40,125,255,.9), 0 0 18px rgba(40,125,255,.65);
+}
+.about-page .about-founder-hero .founder-hero-name span {
+  color: #8ccfff !important;
+  text-shadow: 0 0 8px rgba(40,125,255,.65);
+}
