@@ -848,3 +848,43 @@ footer .footer-copy a{color:#55d6ff!important}
 .footer-socials a:hover,.footer-socials a:focus-visible{color:#55d6ff;background:rgba(40,125,255,.2);transform:translateY(-3px);box-shadow:0 0 16px rgba(40,125,255,.4);outline:none}
 .footer-copy{order:1}
 @media(max-width:600px){.footer-menu-row{justify-content:center;text-align:center}.footer-socials{width:100%;justify-content:center;order:1}.footer-copy{order:2}}
+
+/* Mobile/tablet About founder layout: show James clearly in a square portrait */
+@media (max-width: 900px) {
+  .about-page .about-founder-hero {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px !important;
+    padding: 22px !important;
+  }
+  .about-page .about-founder-hero .founder-hero-photo {
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+  }
+  .about-page .about-founder-hero .founder-hero-photo img {
+    width: min(76vw, 300px) !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    object-position: center 22% !important;
+    border-radius: 22px !important;
+  }
+  .about-page .about-founder-hero .founder-hero-name {
+    text-align: center;
+    width: 100%;
+  }
+  .about-page .about-founder-hero .tech-background-content {
+    text-align: center !important;
+    padding: 8px 0 14px !important;
+  }
+  .about-page .about-founder-hero .tech-background-content h2,
+  .about-page .about-founder-hero .tech-background-content > p:not(.eyebrow) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .about-page .about-founder-hero .tech-background-line {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
